@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  ocr:
+    build: ./ocr_service
+    container_name: ocr-service
+    ports:
+      - "8001:8001"
+
+  gemma3:
+    build: ./llm_service
+    container_name: gemma3-service
+    # no external port needed unless you want to test directly
+    ports:
+      - "8080:8080"
+    # for GPU support in k8s you'd use nvidia runtime; locally you may add:
+    # runtime: nvidia
+
+  api:
+    build: ./api_service
+    container_name: api-service
+    ports:
+      - "8000:8000"
+    environment:
+      OCR_URL: http://ocr-service:8001/ocr
+      OLLAMA_URL: http://gemma3-service:8080
+    depends_on:
+      - ocr
+      - gemma3
