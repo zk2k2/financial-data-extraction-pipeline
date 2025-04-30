@@ -1,0 +1,34 @@
+{
+    "invoice_number": "123",
+    "seller": {
+        "name": "Example Company Ltd.",
+        "address": "65 Tadcaster Road, Horstorth LS18 4AA, Ergliend",
+        "country": "England"
+    },
+    "invoice_date": "25/04/2019",
+    "due_date": "14/05/2019",
+    "client": {
+        "name": "John Smith",
+        "address": "14 Tottenham Court Road, 12345, London W1T 1JY",
+        "reference": null,
+        "country": null
+    },
+    "items": [
+        {
+            "description": "Service hour",
+            "amount": 300.0,
+            "vat_amount": 0.0,
+            "vat_rate": null
+        },
+        {
+            "description": "Product",
+            "amount": 1039.9,
+            "vat_amount": 0.0,
+            "vat_rate": null
+        }
+    ],
+    "total": 1339.9,
+    "total_vat": 0.0,
+    "total_due": 1339.9,
+    "issued_by": "Example Company Ltd."
+}

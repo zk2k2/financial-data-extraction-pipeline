@@ -1,0 +1,52 @@
+{
+    "invoice_number": "8Y9M5d-551",
+    "seller": {
+        "name": "Woods-Gibbs",
+        "address": "696 Thompson Forest, Ashleybury,AR 73994 US",
+        "country": "US"
+    },
+    "invoice_date": "06-Apr-2020",
+    "due_date": null,
+    "client": {
+        "name": "Anthony Roberts",
+        "address": "472 Evelyn Shoal Apt.375, Manningchester,PR 98118 US",
+        "reference": "+307)096-5955",
+        "country": "US"
+    },
+    "items": [
+        {
+            "description": "Apply box.",
+            "amount": 90.32,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Pm heavy play",
+            "amount": 199.62,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Scene number.",
+            "amount": 60.39,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Single six.",
+            "amount": 43.16,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Ahead meet.",
+            "amount": 86.09,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 569.9,
+    "total_vat": null,
+    "total_due": 596.81,
+    "issued_by": "LAD"
+}

@@ -1,0 +1,34 @@
+{
+    "invoice_number": "86619053",
+    "seller": {
+        "name": "CENTER FOR INDOOR AIR RESEARCH",
+        "address": "1099 Winterson Road,Suite 280\nLinthicum.Maryland 21090-2216",
+        "country": "USA"
+    },
+    "invoice_date": "01/09/1996",
+    "due_date": null,
+    "client": {
+        "name": "Lorillard Corporation",
+        "address": "P.O.Box21688\nGreensboro,NorthCarolina 27420-1688",
+        "reference": null,
+        "country": "USA"
+    },
+    "items": [
+        {
+            "description": "September assessment for CIAR",
+            "amount": 54487.0,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Less monthly adjustment for Dunn research project (1996 contract)",
+            "amount": 534.0,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 53954.0,
+    "total_vat": null,
+    "total_due": 53954.0,
+    "issued_by": null
+}

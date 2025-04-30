@@ -1,0 +1,46 @@
+{
+    "invoice_number": "61356291",
+    "seller": {
+        "name": "Chapman, Kim and Green",
+        "address": "64731 James Branch",
+        "country": "MS"
+    },
+    "invoice_date": "09/06/2012",
+    "due_date": null,
+    "client": {
+        "name": "Rodriguez-Stevens",
+        "address": "2280 Angela Plain",
+        "reference": null,
+        "country": "NC"
+    },
+    "items": [
+        {
+            "description": "Wine Glasses Goblets Pair Clear",
+            "amount": 12.0,
+            "vat_amount": 5.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Glass With Hooks Stemware Storage",
+            "amount": 28.08,
+            "vat_amount": 4.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Multiple Uses Iron Wine Rack Hanging Glass",
+            "amount": 7.5,
+            "vat_amount": 8.25,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Replacement Corkscrew Parts Spiral Worm Wine Opener Bottle Houdini",
+            "amount": 12.99,
+            "vat_amount": 14.29,
+            "vat_rate": "10%"
+        }
+    ],
+    "total": 192.81,
+    "total_vat": 19.28,
+    "total_due": 212.09,
+    "issued_by": null
+}

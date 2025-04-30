@@ -1,0 +1,34 @@
+{
+    "invoice_number": "INV-0001",
+    "seller": {
+        "name": "Example Ltd",
+        "address": "6 Cruikshank Road\nLondon\nWC1X 9KG",
+        "country": "UNITED KINGDOM"
+    },
+    "invoice_date": "18/05/2017",
+    "due_date": "18/06/2017",
+    "client": {
+        "name": "Try It Ltd",
+        "address": "123 Short Street\nBedford\nBedfordshire\nM40 4NL",
+        "reference": "123456789",
+        "country": "UNITED KINGDOM"
+    },
+    "items": [
+        {
+            "description": "Bookkeeping, 05/2017",
+            "amount": 300.0,
+            "vat_amount": 60.0,
+            "vat_rate": "20%"
+        },
+        {
+            "description": "Additional services",
+            "amount": 150.0,
+            "vat_amount": 30.0,
+            "vat_rate": "20%"
+        }
+    ],
+    "total": 450.0,
+    "total_vat": 90.0,
+    "total_due": 540.0,
+    "issued_by": null
+}

@@ -1,0 +1,70 @@
+{
+    "invoice_number": "00001",
+    "seller": {
+        "name": "Your Company Name",
+        "address": "[Street address]\n[City,State]\n[Country]",
+        "country": "[Country]"
+    },
+    "invoice_date": "01/12/2020",
+    "due_date": null,
+    "client": {
+        "name": "Company Name",
+        "address": "[Street address]\n[City,State]\n[Postal]",
+        "reference": null,
+        "country": null
+    },
+    "items": [
+        {
+            "description": "Item1",
+            "amount": 100.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item2",
+            "amount": 200.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item3",
+            "amount": 100.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item4",
+            "amount": 200.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item5",
+            "amount": 200.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item6",
+            "amount": 220.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item7",
+            "amount": 240.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Item8",
+            "amount": 260.0,
+            "vat_amount": 0.0,
+            "vat_rate": "0%"
+        }
+    ],
+    "total": 7680.0,
+    "total_vat": 0.0,
+    "total_due": 7680.0,
+    "issued_by": null
+}

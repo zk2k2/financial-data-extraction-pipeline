@@ -1,0 +1,28 @@
+{
+    "invoice_number": "15/112171",
+    "seller": {
+        "name": "THE OFFICE SOLUTIONS ORGANISATION",
+        "address": "J.Black & Partners\n9 Shakespeare Road\nwellesbourne\nStratford\nwarwickshire\n15\nWK4 3VG",
+        "country": "United Kingdom"
+    },
+    "invoice_date": "05/01/2004",
+    "due_date": null,
+    "client": {
+        "name": "DEMO Co.LTD",
+        "address": "5 Priory Mews\nMonks Ferry\nBirkenhead\nWirral\nCH41 5AZ",
+        "reference": "DM/0",
+        "country": "United Kingdom"
+    },
+    "items": [
+        {
+            "description": "Sasco 2400188ar",
+            "amount": 8.93,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 8.93,
+    "total_vat": null,
+    "total_due": null,
+    "issued_by": "BLA001"
+}

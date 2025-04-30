@@ -1,0 +1,1 @@
+"format" field in ollama results in strict json format

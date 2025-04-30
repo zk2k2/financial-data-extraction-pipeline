@@ -1,0 +1,64 @@
+{
+    "invoice_number": "95707254",
+    "seller": {
+        "name": "Cobb, Allen and Diaz",
+        "address": "8378 Long Station Apt. 840",
+        "country": "CA"
+    },
+    "invoice_date": "20/07/2020",
+    "due_date": null,
+    "client": {
+        "name": "Carr, Odom and Jones",
+        "address": "233 Justin Summit",
+        "reference": null,
+        "country": "KY"
+    },
+    "items": [
+        {
+            "description": "New KID CUDI \"WZRD\" Rap Hip",
+            "amount": 22.49,
+            "vat_amount": 5.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Hop Soul Music Men's Black T-Shirt Size S to 3XL",
+            "amount": 37.69,
+            "vat_amount": 2.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Sperry Top-Sider Boys Toddlers Lace Tie Boat Shoes Brown 13M",
+            "amount": 37.69,
+            "vat_amount": 1.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "New TODDLER SHAQ HIGH TOP SHOES SIZE 4",
+            "amount": 9.99,
+            "vat_amount": 3.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "PLAE SAM 2.0 Shoes Sandals",
+            "amount": 15.0,
+            "vat_amount": 1.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Breathable Summer Strap Navy Blue Size 12 Kid",
+            "amount": 79.96,
+            "vat_amount": 4.0,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Lotto Soccer Turf Shoes 6 Black Vincente Turf Jr Indoor Outdoor Futbol Cleats",
+            "amount": 19.99,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 275.07,
+    "total_vat": 27.51,
+    "total_due": 302.58,
+    "issued_by": null
+}

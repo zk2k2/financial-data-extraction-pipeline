@@ -1,0 +1,28 @@
+{
+    "invoice_number": "123456789",
+    "seller": {
+        "name": "Amazon Web Services, Inc.",
+        "address": "410 Terry Ave North\nSeattle, WA 98109-5210, US",
+        "country": "US"
+    },
+    "invoice_date": "03/04/2018",
+    "due_date": "03/04/2018",
+    "client": {
+        "name": "John Doe",
+        "address": "Shiny st 12-22\nFirst Town, Woodwill , 123962",
+        "reference": null,
+        "country": "DE"
+    },
+    "items": [
+        {
+            "description": "Amazon Simple Storage Service",
+            "amount": 6.58,
+            "vat_amount": 1.01,
+            "vat_rate": null
+        }
+    ],
+    "total": 6.58,
+    "total_vat": 1.01,
+    "total_due": 6.58,
+    "issued_by": null
+}

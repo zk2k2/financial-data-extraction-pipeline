@@ -1,0 +1,28 @@
+{
+    "invoice_number": null,
+    "seller": {
+        "name": "LEO BURNETT U.S.A.",
+        "address": null,
+        "country": null
+    },
+    "invoice_date": "19/08/1993",
+    "due_date": null,
+    "client": {
+        "name": "PHILIP MORRIS INC",
+        "address": null,
+        "reference": "COR6800-93/CMAL",
+        "country": null
+    },
+    "items": [
+        {
+            "description": "DATABASE RESEARCH FEE",
+            "amount": 1000.0,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 26100.0,
+    "total_vat": null,
+    "total_due": null,
+    "issued_by": null
+}

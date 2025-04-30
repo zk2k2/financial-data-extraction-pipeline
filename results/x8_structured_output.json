@@ -1,0 +1,34 @@
+{
+    "invoice_number": "102325",
+    "seller": {
+        "name": "Bright Sparks Electrical",
+        "address": "Ficus Coworking\n155 Bolt St.,Dayton,OH",
+        "country": "OH"
+    },
+    "invoice_date": "17/06/2023",
+    "due_date": "27/06/2023",
+    "client": {
+        "name": "Bright Sparks Electrical",
+        "address": "586 Elmer St.Dayton,OH",
+        "reference": "311555-0100",
+        "country": "OH"
+    },
+    "items": [
+        {
+            "description": "LED Lighting installation",
+            "amount": 100,
+            "vat_amount": 0,
+            "vat_rate": "0%"
+        },
+        {
+            "description": "Fire Alarms maintenance checks",
+            "amount": 91.5,
+            "vat_amount": 0,
+            "vat_rate": "0%"
+        }
+    ],
+    "total": 191.5,
+    "total_vat": 13.4,
+    "total_due": 194.65,
+    "issued_by": "Bright Sparks Electrical"
+}

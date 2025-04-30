@@ -1,0 +1,34 @@
+{
+    "invoice_number": "40378170",
+    "seller": {
+        "name": "Patel, Thompson and Montgomery",
+        "address": "356 Kyle Vista",
+        "country": "MA"
+    },
+    "invoice_date": "15/10/2012",
+    "due_date": null,
+    "client": {
+        "name": "Jackson, Odonnell and Jackson",
+        "address": "267 John Track Suite 841",
+        "reference": null,
+        "country": "PA"
+    },
+    "items": [
+        {
+            "description": "Leed's Wine Companion Bottle",
+            "amount": 7.5,
+            "vat_amount": 0.75,
+            "vat_rate": "10%"
+        },
+        {
+            "description": "Corkscrew Opener Gift Box Set with Foil Cutter",
+            "amount": 7.5,
+            "vat_amount": 0.75,
+            "vat_rate": "10%"
+        }
+    ],
+    "total": 7.5,
+    "total_vat": 0.75,
+    "total_due": 8.25,
+    "issued_by": null
+}

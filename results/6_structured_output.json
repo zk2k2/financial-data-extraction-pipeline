@@ -1,0 +1,46 @@
+{
+    "invoice_number": "INV/69-33/009",
+    "seller": {
+        "name": "King.Richards and Roy",
+        "address": "New Mariaborough,MT 23884 US",
+        "country": "US"
+    },
+    "invoice_date": "21-Mar-2020",
+    "due_date": null,
+    "client": {
+        "name": "Andrew Green",
+        "address": "8274 Bradshaw Path",
+        "reference": "+825)267-2334",
+        "country": null
+    },
+    "items": [
+        {
+            "description": "Land response different",
+            "amount": 62.41,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Writer difference",
+            "amount": 159.4,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "College.",
+            "amount": 0.78,
+            "vat_amount": null,
+            "vat_rate": null
+        },
+        {
+            "description": "Own eat least.",
+            "amount": 126.66,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 367.25,
+    "total_vat": null,
+    "total_due": 367.25,
+    "issued_by": null
+}

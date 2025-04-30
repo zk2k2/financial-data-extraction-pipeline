@@ -1,0 +1,28 @@
+{
+    "invoice_number": null,
+    "seller": {
+        "name": "Cloudtail India Private Limited",
+        "address": "SyNo.524/12,3,4,6525/12,3,4,5,6\n526/3.4,5,6,527 of madivala village and Sy no.51/1\nof thatanahalli village,kasaba hobli, anekal taluk\nBangalore urban district\nBangalore",
+        "country": "IN"
+    },
+    "invoice_date": "26/09/2018",
+    "due_date": null,
+    "client": {
+        "name": "Cloudtail India Private Limited",
+        "address": null,
+        "reference": null,
+        "country": null
+    },
+    "items": [
+        {
+            "description": "Description",
+            "amount": 1456.78,
+            "vat_amount": 262.22,
+            "vat_rate": "18%"
+        }
+    ],
+    "total": 1719.0,
+    "total_vat": 262.22,
+    "total_due": 1719.0,
+    "issued_by": null
+}

@@ -1,0 +1,28 @@
+{
+    "invoice_number": "1-996-84199",
+    "seller": {
+        "name": "FedEx",
+        "address": "4731WATLANTIC AVE STE B1 DELRAYBEACHFL 33445-3897 US",
+        "country": "US"
+    },
+    "invoice_date": "01/09/2014",
+    "due_date": "16/09/2014",
+    "client": {
+        "name": "IRISINC",
+        "address": "4731WATLANTIC AVE STE B1 DELRAYBEACHFL33445-3897",
+        "reference": null,
+        "country": null
+    },
+    "items": [
+        {
+            "description": "FedEx Ground Services",
+            "amount": 11.0,
+            "vat_amount": null,
+            "vat_rate": null
+        }
+    ],
+    "total": 11.0,
+    "total_vat": null,
+    "total_due": 11.0,
+    "issued_by": null
+}
