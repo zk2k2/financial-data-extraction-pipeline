@@ -10,7 +10,7 @@ from fastapi import FastAPI, UploadFile, File
 from helpers.ocr_helper import extract_text_from_image
 from fastapi.concurrency import run_in_threadpool
 import shutil
-from Chain import chain  # Your existing LLMChain instance
+from Chain import extract_invoice_data
 
 
 UPLOAD_DIR = "data"
@@ -44,7 +44,7 @@ async def extract(invoice_image: UploadFile = File(...)):
     ocr_text = await run_in_threadpool(extract_text_from_image, tmp_path)
 
     # Run LLM chain on the OCR text in a threadpool
-    result_text = await run_in_threadpool(chain.run, ocr_output=ocr_text)
+    result_text = await run_in_threadpool(extract_invoice_data, ocr_output=ocr_text)
 
     # Parse the JSON string returned by the LLM
     try:
@@ -90,7 +90,7 @@ async def extract_multiple():
         gpu_stats.append(get_gpu_status())
 
         # Run LLM chain on the OCR text in a threadpool
-        result_text = await run_in_threadpool(chain.run, ocr_output=ocr_text)
+        result_text = await run_in_threadpool(extract_invoice_data, ocr_output=ocr_text)
         gpu_stats.append(get_gpu_status())
 
         # Parse the JSON string returned by the LLM

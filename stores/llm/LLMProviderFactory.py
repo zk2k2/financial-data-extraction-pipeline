@@ -1,10 +1,10 @@
-from helpers.config import Settings
+#from helpers.config import Settings
 from stores.llm import LLMEnums
 from stores.llm.providers import OpenAIProvider
 
 
 class LLMProviderFactory:
-    def __init__(self, config: Settings):
+    def __init__(self, config: dict):e
         self.config = config
 
     def create(self, provider: str):

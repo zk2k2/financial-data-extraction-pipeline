@@ -2,7 +2,7 @@ from pathlib import Path
 from paddleocr import PaddleOCR
 from pdf2image import convert_from_path
 
-ingine = PaddleOCR(use_angle_cls=True, lang="en", show_log=False)
+ingine = PaddleOCR(use_angle_cls=True, lang="en", show_log=False, use_gpu=False)
 
 
 def extract_text_from_image(file_path: str) -> str:
@@ -38,4 +38,4 @@ def extract_text_from_image(file_path: str) -> str:
     return "\n".join(lines)
 
 
-print(extract_text_from_image("/home/khalil/ollama-app/invoices/5.png"))
+print(extract_text_from_image("C:\\Users\\USER\\Desktop\\invoice.png"))

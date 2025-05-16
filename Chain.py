@@ -3,15 +3,19 @@ import json
 from dotenv import load_dotenv
 from stores.llm.LLMProviderFactory import LLMProviderFactory
 from stores.llm.LLMEnums import OpenAIEnums
+from types import SimpleNamespace
 # from helpers.config import Settings
 
 # Load environment variables
 load_dotenv()
+print("API key:", os.getenv("OPENAI_API_KEY"))
 
 # Create settings object with required configuration
-config = dict(
+
+
+config = SimpleNamespace(
     OPENAI_API_KEY=os.getenv("OPENAI_API_KEY"),
-    OPENAI_API_URL=os.getenv("OPENAI_API_URL", "https://api.openai.com/v1"),
+    OPENAI_API_URL=os.getenv("OPENAI_API_URL"),
     INPUT_DEFAULT_MAX_CHARACTERS=10000,
     GENERATION_DEFAULT_MAX_TOKENS=2000,
     DEFAULT_TEMPERATURE=0.1,
@@ -20,6 +24,7 @@ config = dict(
 # Create the OpenAI provider using the factory
 factory = LLMProviderFactory(config)
 llm_provider = factory.create("openai")
+
 if not llm_provider:
     raise ValueError("Failed to create LLM provider. Check your configuration.")
 model_id = os.getenv("LLM_MODEL", "gpt-3.5-turbo")
