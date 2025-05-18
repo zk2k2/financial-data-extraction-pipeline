@@ -3,20 +3,23 @@ import json
 from dotenv import load_dotenv
 from stores.llm.LLMProviderFactory import LLMProviderFactory
 from stores.llm.LLMEnums import OpenAIEnums
-# from helpers.config import Settings
+from helpers.config import get_settings
 
 # Load environment variables
 load_dotenv()
 
 # Create settings object with required configuration
-config = dict(
-    OPENAI_API_KEY=os.getenv("OPENAI_API_KEY"),
-    OPENAI_API_URL=os.getenv("OPENAI_API_URL", "https://api.openai.com/v1"),
-    INPUT_DEFAULT_MAX_CHARACTERS=10000,
-    GENERATION_DEFAULT_MAX_TOKENS=2000,
-    DEFAULT_TEMPERATURE=0.1,
-)
+config = get_settings()
+if not config:
+    raise ValueError(
+        "Failed to load configuration. Check your .env file or environment variables."
+    )
 
+# Check if OpenAI API key is set
+if not config.OPENAI_API_KEY:
+    raise ValueError(
+        "OpenAI API key is not set. Please set the OPENAI_API_KEY environment variable."
+    )
 # Create the OpenAI provider using the factory
 factory = LLMProviderFactory(config)
 llm_provider = factory.create("openai")

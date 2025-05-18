@@ -36,6 +36,3 @@ def extract_text_from_image(file_path: str) -> str:
                 lines.append(line[1][0])
 
     return "\n".join(lines)
-
-
-print(extract_text_from_image("/home/khalil/ollama-app/invoices/5.png"))
