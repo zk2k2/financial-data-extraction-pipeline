@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "White and Sons",
+    "address": "853 Barnes Street Apt. 985, Lake Robert, NY 19313 US",
+    "email": "cpetersen@example.com",
+    "phone_number": "(428)870-5886",
+    "vat_number": null,
+    "website": "http://www.duran.org/"
+  },
+  "invoice_date": "09/08/2007",
+  "invoice_number": "9Y4M8d-752",
+  "currency": "EUR",
+  "total_net": 726.21,
+  "total_tax": 65.36,
+  "total_amount_incl_tax": 740.88
+}

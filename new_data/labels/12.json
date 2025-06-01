@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "A COMPANY",
+    "address": "Saldo Apps, Nezavisimost str. 28-32, Minsk, Belarus, 220040",
+    "email": "wiz@saldoapps.com",
+    "phone_number": "8029697057",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "07/07/2021",
+  "invoice_number": "001",
+  "currency": "CAD",
+  "total_net": 8000.00,
+  "total_tax": 480.00,
+  "total_amount_incl_tax": 8480.00
+}

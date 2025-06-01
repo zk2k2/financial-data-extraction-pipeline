@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "ABC Design",
+    "address": "3839 Maxwell Street, Denver, CO 80303",
+    "email": "info@abcdesigners.com",
+    "phone_number": "303-555-0173",
+    "vat_number": null,
+    "website": "abcdesigners.com"
+  },
+  "invoice_date": "03/01/2021",
+  "invoice_number": "2021-001",
+  "currency": "USD",
+  "total_net": 150.00,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 135.00
+}

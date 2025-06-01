@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Arthur Thomson Design",
+    "address": "926 Lavender St.,Denver,CO",
+    "email": "info@athomsondesign.sp.com",
+    "phone_number": "5551422266",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "18/07/2024",
+  "invoice_number": "15626",
+  "currency": "USD",
+  "total_net": 442.35,
+  "total_tax": 30.95,
+  "total_amount_incl_tax": 473.30
+}

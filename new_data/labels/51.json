@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Brooks LLC",
+    "address": "9950 Santos Squares, Garzafurt, MH 31937 US",
+    "email": "ospencer@example.com",
+    "phone_number": "+(734)160-7732",
+    "vat_number": "",
+    "website": "www.BrooksLLC.com"
+  },
+  "invoice_date": "24/12/2014",
+  "invoice_number": "INV/39-70/943",
+  "currency": "USD",
+  "total_net": 177.05,
+  "total_tax": 15.93,
+  "total_amount_incl_tax": 185.83
+}

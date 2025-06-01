@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "",
+    "address": "",
+    "email": "",
+    "phone_number": "222 555 7777",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "15/10/2060",
+  "invoice_number": "#C123456",
+  "currency": "$",
+  "total_net": 25995.00,
+  "total_tax": 2088.00,
+  "total_amount_incl_tax": 28283.00
+}

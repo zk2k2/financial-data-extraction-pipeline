@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": null,
+    "address": "66636 Hernandez Loaf Suite 714, Lisafurt, LA 33980 US",
+    "email": "radams@example.org",
+    "phone_number": "+(019)387-6635",
+    "vat_number": null,
+    "website": "https://www.smith-carter.com/"
+  },
+  "invoice_date": "29/12/1996",
+  "invoice_number": "INV/41-77/713",
+  "currency": "$",
+  "total_net": 732.68,
+  "total_tax": 19.09,
+  "total_amount_incl_tax": 751.77
+}

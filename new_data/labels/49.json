@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Miller Inc",
+    "address": "5190 Perry Passage, Kellyburgh, R160615US",
+    "email": "marymoore@example.org",
+    "phone_number": "",
+    "vat_number": "",
+    "website": "http://www.reese.com/"
+  },
+  "invoice_date": "07/02/2016",
+  "invoice_number": "INV/91-75/865",
+  "currency": "EUR",
+  "total_net": 459.48,
+  "total_tax": 16.12,
+  "total_amount_incl_tax": 475.60
+}

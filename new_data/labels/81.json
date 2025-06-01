@@ -1,0 +1,16 @@
+{
+"supplier": {
+"name": "Stein Fernandez",
+"address": "Address: 0344 Jonathan Club, Port Patricia, PW 72063 US",
+"email": "houstonjoyce@example.net",
+"phone_number": "+463)715-8197",
+"vat_number": "",
+"website": "http://www.maddox.com"
+},
+"invoice_date": "25/09/2010",
+"invoice_number": "",
+"currency": "$",
+"total_net": 851.58,
+"total_tax": 64.40,
+"total_amount_incl_tax": 979.82
+}

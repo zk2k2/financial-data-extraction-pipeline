@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": null,
+    "address": null,
+    "email": null,
+    "phone_number": null,
+    "vat_number": null,
+    "website": null
+  },
+  "invoice_date": "02/04/2023",
+  "invoice_number": "182-4",
+  "currency": "$",
+  "total_net": 37.50,
+  "total_tax": null,
+  "total_amount_incl_tax": null
+}

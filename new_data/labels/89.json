@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Richardson-Davis",
+    "address": "6479 Smith Causeway, East Camerontown, AS 38212 US",
+    "email": "thomas85@example.net",
+    "phone_number": "+1(424)795-9802",
+    "vat_number": "",
+    "website": "https://lopez.biz"
+  },
+  "invoice_date": "27/03/2015",
+  "invoice_number": "INV/39-99/176",
+  "currency": "USD",
+  "total_net": 951.32,
+  "total_tax": 28.55,
+  "total_amount_incl_tax": 969.79
+}

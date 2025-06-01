@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Stein-Fernandez",
+    "address": "0344 Jonathan Club, Port Patriciahire, PW 72063 US",
+    "email": "houstonjoyce@example.net",
+    "phone_number": "+1(108)929-7754",
+    "vat_number": "",
+    "website": "https://www.yoder.org"
+  },
+  "invoice_date": "30/11/2016",
+  "invoice_number": "",
+  "currency": "USD",
+  "total_net": 1400.99,
+  "total_tax": 98.41,
+  "total_amount_incl_tax": 1453.88
+}

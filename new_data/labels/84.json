@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Bill to:Elizabeth White",
+    "address": "624 Tina Falls North, Danielburg, DC 12981 US",
+    "email": "amandagilmores@example.org",
+    "phone_number": "+(439)957-4454",
+    "vat_number": "",
+    "website": "http://www.miller.biz/"
+  },
+  "invoice_date": "25/09/1995",
+  "invoice_number": "INVO6189481",
+  "currency": "USD",
+  "total_net": 713.06,
+  "total_tax": 32.97,
+  "total_amount_incl_tax": 714.66
+}

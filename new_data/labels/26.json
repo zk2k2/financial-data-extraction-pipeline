@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "SIMPDEHV Montgomery, Harrison and Vaughan",
+    "address": "840 Anderson Locks, Mariatown, AL 01838 US",
+    "email": null,
+    "phone_number": null,
+    "vat_number": null,
+    "website": null
+  },
+  "invoice_date": "01/02/1999",
+  "invoice_number": "4268-892",
+  "currency": "$",
+  "total_net": 752.03,
+  "total_tax": 26.51,
+  "total_amount_incl_tax": 768.46
+}

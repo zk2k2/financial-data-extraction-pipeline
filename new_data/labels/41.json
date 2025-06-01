@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Burton Inc",
+    "address": "5917 Carr Forge Apt. 998, Port Brandi, OK 94611",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "955-83-7886",
+    "website": ""
+  },
+  "invoice_date": "03/05/2012",
+  "invoice_number": "87280945",
+  "currency": "USD",
+  "total_net": 995.96,
+  "total_tax": 99.60,
+  "total_amount_incl_tax": 1095.56
+}

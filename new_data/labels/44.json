@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Andy Caldwell Photography",
+    "address": "126 Montford St., Detroit, MI",
+    "email": "info@acaldwellphoto.sp.com",
+    "phone_number": "555 252 6859",
+    "vat_number": null,
+    "website": null
+  },
+  "invoice_date": "11/06/2024",
+  "invoice_number": "135263-151",
+  "currency": "$",
+  "total_net": 105.50,
+  "total_tax": 7.40,
+  "total_amount_incl_tax": 101.60
+}

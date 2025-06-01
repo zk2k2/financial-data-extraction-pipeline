@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "SuperStore",
+    "address": "Melton, Victoria, Australia",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "11/09/2012",
+  "invoice_number": "30845",
+  "currency": "USD",
+  "total_net": 1866.96,
+  "total_tax": 0,
+  "total_amount_incl": 0
+}

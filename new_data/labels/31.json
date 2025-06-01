@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Snyder Plumbing",
+    "address": "185 Cooke St., Detroit, MI",
+    "email": "info@snyderplumbing.site.com",
+    "phone_number": "(311) 555-0100",
+    "vat_number": null,
+    "website": "www.snyderplumbing.site.com"
+  },
+  "invoice_date": "08/06/2023",
+  "invoice_number": "18263636",
+  "currency": "$",
+  "total_net": 191.50,
+  "total_tax": 13.40,
+  "total_amount_incl_tax": 194.65
+}

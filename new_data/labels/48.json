@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Woods-Gibbs",
+    "address": "696 Thompson Forest, Ashleybury, AR 73994 US",
+    "email": "amanda25@example.org",
+    "phone_number": null,
+    "vat_number": null,
+    "website": null
+  },
+  "invoice_date": "13/07/2022",
+  "invoice_number": "INV44421606",
+  "currency": "$",
+  "total_net": 216.29,
+  "total_tax": 1.34,
+  "total_amount_incl_tax": 217.63
+}

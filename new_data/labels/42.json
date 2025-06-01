@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Jessica Campbell Accounting",
+    "address": "145 Carlson St., Manchester, NH",
+    "email": "info@icampbellacc.sp.com",
+    "phone_number": "5555325969",
+    "vat_number": null,
+    "website": null
+  },
+  "invoice_date": "17/08/2024",
+  "invoice_number": "14829",
+  "currency": "$",
+  "total_net": 101.50,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 91.35
+}

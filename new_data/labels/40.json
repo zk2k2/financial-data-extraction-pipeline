@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "King, Richards and Roy",
+    "address": null,
+    "email": "smithjeffrey@example.net",
+    "phone_number": "+(894)520-9967",
+    "vat_number": null,
+    "website": "http://www.jackson.info/"
+  },
+  "invoice_date": "21/10/1993",
+  "invoice_number": "9Y9M1d-333",
+  "currency": "USD",
+  "total_net": 1323.70,
+  "total_tax": 23.47,
+  "total_amount_incl_tax": 1347.17
+}

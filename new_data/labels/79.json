@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Houbara Communications",
+    "address": "214, 4 PO Box 2456, Dubai Media City, Dubai, UAE",
+    "email": "HoubaraCommunications@HoubaraComms.ae",
+    "phone_number": "+971 4 390 1630",
+    "vat_number": "1003948017210003",
+    "website": ""
+  },
+  "invoice_date": "16/02/2020",
+  "invoice_number": "PO07567",
+  "currency": "AED",
+  "total_net": 7000.00,
+  "total_tax": 350.00,
+  "total_amount_incl_tax": 7350.00
+}

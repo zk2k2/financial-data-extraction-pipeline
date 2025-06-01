@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Best Massage Chairs, LTD",
+    "address": "10 Main St, 00000 Smith City, Great Britain",
+    "email": "info@bestexample.com",
+    "phone_number": "0000000000",
+    "vat_number": "",
+    "website": "www.bestexample.com"
+  },
+  "invoice_date": "22/11/2017",
+  "invoice_number": "RE-1010",
+  "currency": "GBP",
+  "total_net": 1599.00,
+  "total_tax": 159.90,
+  "total_amount_incl_tax": 1758.90
+}

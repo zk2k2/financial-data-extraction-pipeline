@@ -1,0 +1,14 @@
+{
+  "supplier": {
+    "name": "Stein-Fernandez",
+    "address": "0344 Jonathan Club, New Steven, NY 55056 US",
+    "email": "andersonjason@example.com",
+    "phone_number": "(469)114-2587",
+    "vat_number": "",
+    "website": "http://www.smith.com/"
+  },
+  "invoice_date": "09/12/2007",
+  "invoice_number": "",
+  "currency": "USD",
+  "total_net": 535
+}

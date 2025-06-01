@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": null,
+    "address": "83275 Hill Wells, Port Mary, SD 17400 US",
+    "email": "tarmstrong@example.com",
+    "phone_number": "+(024)392-8000",
+    "vat_number": "T2ABCDEI24322E4",
+    "website": "https://www.ieon.com/"
+  },
+  "invoice_date": "26/10/2020",
+  "invoice_number": "7525-068",
+  "currency": null,
+  "total_net": null,
+  "total_tax": null,
+  "total_amount_incl_tax": null
+}

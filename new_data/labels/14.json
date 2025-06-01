@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Foster, Wells and Martin",
+    "address": "80626 Gates Plains Suite 320, Nancymouth, LA 58369 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "",
+  "invoice_number": "3394-270",
+  "currency": "$",
+  "total_net": 399.55,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 399.55
+}

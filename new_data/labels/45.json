@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Matthew Bates Accountancy Services",
+    "address": "34–38 Market Street, Maidenhead, SL6 8AD",
+    "email": "info@mathewbatesaccountancy.site.com",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "14/08/2022",
+  "invoice_number": "0000123",
+  "currency": "GBP",
+  "total_net": 800,
+  "total_tax": 160,
+  "total_amount_incl_tax": 960
+}

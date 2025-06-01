@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Value Valets",
+    "address": "15 Carr Row, Sheffield",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": "www.vauevalets.site.com"
+  },
+  "invoice_date": "30/07/2022",
+  "invoice_number": "000012",
+  "currency": "£",
+  "total_net": 260,
+  "total_tax": 0,
+  "total_amount_incl_tax": 260
+}

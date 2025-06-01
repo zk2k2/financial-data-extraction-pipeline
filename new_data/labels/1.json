@@ -1,0 +1,17 @@
+{
+  "supplier": {
+    "name": "Prospect Inc",
+    "address": "183 East Street, West City, PA",
+    "email": "",
+    "phone_number": "555-1234-567",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "28/06/2020",
+  "invoice_number": "",
+  "currency": "USD",
+  "total_net": 1750.00,
+  "total_tax": 402.50,
+  "total_amount_incl_tax": 2152.50
+}
+

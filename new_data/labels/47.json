@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": null,
+    "address": "047 Jackson Meadows Apt. 391, Pearsonmouth, OH 83042 US",
+    "email": null,
+    "phone_number": null,
+    "vat_number": "24AADCP1453)/AZZ",
+    "website": null
+  },
+  "invoice_date": "26/06/2019",
+  "invoice_number": "1Y9M96-730",
+  "currency": "EUR",
+  "total_net": 338.68,
+  "total_tax": 6.40,
+  "total_amount_incl_tax": 345.08
+}

@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Saldo Apps",
+    "address": "First str. 28-32, Chicago, USA",
+    "email": "wiz@saldoapps.com",
+    "phone_number": "8029697057",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "13/07/2021",
+  "invoice_number": "001",
+  "currency": "USD",
+  "total_net": 8000.00,
+  "total_tax": 480.00,
+  "total_amount_incl_tax": 8480.00
+}

@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Littlefoot Bookkeeping Services",
+    "address": "6 High Street, London England L11 1LL, United Kingdom",
+    "email": "",
+    "phone_number": "395867541 395867541",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "09/27/2021",
+  "invoice_number": "INV-000001",
+  "currency": "GBP",
+  "total_net": 25.00,
+  "total_tax": 5.00,
+  "total_amount_incl_tax": 30.00
+}

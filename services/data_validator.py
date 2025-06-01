@@ -10,67 +10,126 @@ class InvoiceDataValidator:
     
     def validate_invoice(self, invoice_data: Dict[str, Any]) -> Tuple[Dict[str, Any], List[str], List[str]]:
         """
-        Validate and clean invoice data
+        Validate and clean invoice data with field mapping
         Returns: (cleaned_data, errors, warnings)
         """
         self.errors = []
         self.warnings = []
         
+        # First, normalize the data structure
+        normalized_data = self._normalize_llm_output(invoice_data)
+        
         cleaned_data = {}
         
         # Validate supplier information
-        cleaned_data.update(self._validate_supplier_info(invoice_data))
+        cleaned_data.update(self._validate_supplier_info(normalized_data))
         
         # Validate financial data
-        cleaned_data.update(self._validate_financial_data(invoice_data))
+        cleaned_data.update(self._validate_financial_data(normalized_data))
         
         # Validate dates
-        cleaned_data.update(self._validate_dates(invoice_data))
+        cleaned_data.update(self._validate_dates(normalized_data))
         
         # Validate contact information
-        cleaned_data.update(self._validate_contact_info(invoice_data))
+        cleaned_data.update(self._validate_contact_info(normalized_data))
         
         # Cross-validate financial calculations
         self._cross_validate_amounts(cleaned_data)
         
         return cleaned_data, self.errors, self.warnings
     
+    def _normalize_llm_output(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Normalize nested LLM output to flat structure expected by validator"""
+        normalized = {}
+        
+        # Handle nested supplier data
+        if 'supplier' in data and isinstance(data['supplier'], dict):
+            supplier = data['supplier']
+            normalized['supplier_name'] = supplier.get('name', '')
+            normalized['supplier_address'] = supplier.get('address', '')
+            normalized['supplier_email'] = supplier.get('email', '')
+            normalized['supplier_phone_number'] = supplier.get('phone_number', '')
+            normalized['supplier_vat_number'] = supplier.get('vat_number', '')
+            normalized['supplier_website'] = supplier.get('website', '')
+        else:
+            # Handle flat structure (fallback)
+            normalized['supplier_name'] = data.get('supplier_name', '')
+            normalized['supplier_address'] = data.get('supplier_address', '')
+            normalized['supplier_email'] = data.get('supplier_email', '')
+            normalized['supplier_phone_number'] = data.get('supplier_phone_number', '')
+            normalized['supplier_vat_number'] = data.get('supplier_vat_number', '')
+            normalized['supplier_website'] = data.get('supplier_website', '')
+        
+        # Handle date fields with different possible names
+        normalized['expense_date'] = (
+            data.get('expense_date') or 
+            data.get('invoice_date') or 
+            data.get('date') or
+            ''
+        )
+        
+        # Handle invoice number
+        normalized['invoice_number'] = data.get('invoice_number', '')
+        
+        # Handle currency
+        normalized['currency'] = data.get('currency', '')
+        
+        # Handle financial fields with different possible names
+        normalized['total_net'] = (
+            data.get('total_net') or 
+            data.get('subtotal') or 
+            data.get('net_amount') or
+            None
+        )
+        
+        normalized['total_tax'] = (
+            data.get('total_tax') or 
+            data.get('tax_amount') or 
+            data.get('vat_amount') or
+            None
+        )
+        
+        normalized['total_amount'] = (
+            data.get('total_amount') or 
+            data.get('total_amount_incl_tax') or 
+            data.get('grand_total') or
+            data.get('amount_due') or
+            None
+        )
+        
+        return normalized
+    
     def _validate_supplier_info(self, data: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate supplier information"""
+        """Validate supplier information - make more lenient"""
         result = {}
         
-        # Supplier name
+        # Supplier name - be more lenient
         supplier_name = self._clean_string(data.get("supplier_name"))
-        if supplier_name:
+        if supplier_name and supplier_name.strip():
             if len(supplier_name) > 255:
                 self.warnings.append("Supplier name truncated to 255 characters")
                 supplier_name = supplier_name[:255]
             result["supplier_name"] = supplier_name
         else:
-            self.errors.append("Supplier name is required")
+            # Don't make this a hard error - add warning instead
+            self.warnings.append("Supplier name is missing or empty")
         
-        # VAT number validation
+        # VAT number validation - more lenient
         vat_number = self._clean_string(data.get("supplier_vat_number"))
-        if vat_number:
-            cleaned_vat = self._validate_vat_number(vat_number)
-            if cleaned_vat:
-                result["supplier_vat_number"] = cleaned_vat
-            else:
-                self.warnings.append(f"Invalid VAT number format: {vat_number}")
+        if vat_number and vat_number.strip():
+            result["supplier_vat_number"] = vat_number
         
         # Address
         address = self._clean_string(data.get("supplier_address"))
-        if address:
+        if address and address.strip():
             result["supplier_address"] = address
         
         # Website
         website = self._clean_string(data.get("supplier_website"))
-        if website:
-            cleaned_website = self._validate_website(website)
-            if cleaned_website:
-                result["supplier_website"] = cleaned_website
-            else:
-                self.warnings.append(f"Invalid website format: {website}")
+        if website and website.strip():
+            if not website.startswith(('http://', 'https://')):
+                website = 'https://' + website
+            result["supplier_website"] = website
         
         return result
     

@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": null,
+    "address": "938 Gonzalez Key Suite 573, New Anitaport, MN 04941 US",
+    "email": "susan62@example.com",
+    "phone_number": null,
+    "vat_number": null,
+    "website": "www.PaulGibsonandAnderson.com"
+  },
+  "invoice_date": "29/09/1997",
+  "invoice_number": "1Y6M2d-506",
+  "currency": "EUR",
+  "total_net": 141.26,
+  "total_tax": 4.91,
+  "total_amount_incl_tax": 143.73
+}

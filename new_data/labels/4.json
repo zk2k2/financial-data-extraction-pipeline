@@ -1,0 +1,16 @@
+{
+"supplier": {
+"name": "P&H Plumbing",
+"address": "72 St James Boulevard, Hornchurch, United Kingdom",
+"email": "yourbusinessname.co.uk",
+"phone_number": "",
+"vat_number": "",
+"website": ""
+},
+"invoice_date": "30/06/2022",
+"invoice_number": "2022006",
+"currency": "GBP",
+"total_net": 70.00,
+"total_tax": 0.00,
+"total_amount_incl_tax": 70.00
+}

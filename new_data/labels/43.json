@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Berg, Ward and Wright",
+    "address": "5776 Whitney Meadow, West Adriennebury, ID 40049 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "04AROPO98743125",
+    "website": ""
+  },
+  "invoice_date": "15/12/1996",
+  "invoice_number": "INV36-33155",
+  "currency": "USD",
+  "total_net": 363.45,
+  "total_tax": 19.77,
+  "total_amount_incl_tax": 367.01
+}

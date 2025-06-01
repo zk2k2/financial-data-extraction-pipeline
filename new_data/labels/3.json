@@ -1,0 +1,17 @@
+{
+  "supplier": {
+    "name": "Ellington Wood Decor",
+    "address": "36 Terrick Rd, Ellington PE18 2NT, United Kingdom",
+    "email": "email@yourbusinessname.co.uk",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "30/04/2022",
+  "invoice_number": "042022",
+  "currency": "GBP",
+  "total_net": 600.00,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 600.00
+}
+ 

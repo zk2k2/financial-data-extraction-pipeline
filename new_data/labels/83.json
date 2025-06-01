@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Fernandez PLC",
+    "address": "Address: 2942 Gray Village Suite 237, New Yolanda, IL 18166 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "26/07/1994",
+  "invoice_number": "",
+  "currency": "EUR",
+  "total_net": 591.32,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 591.32
+}

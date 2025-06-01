@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Your Company Name",
+    "address": "77 Hammersmith Road, West Kensington, London, W14 0QH",
+    "email": "freddy@mycompany.co.uk",
+    "phone_number": "0208 668 381",
+    "vat_number": "GB123 4567 89",
+    "website": "www.mycompany.co.uk"
+  },
+  "invoice_date": "31/08/2020",
+  "invoice_number": "1",
+  "currency": "GBP",
+  "total_net": 344.00,
+  "total_tax": 68.80,
+  "total_amount_incl_tax": 412.80
+}

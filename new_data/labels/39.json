@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Fradel and Spies Digital Marketing Agency",
+    "address": "",
+    "email": "",
+    "phone_number": "+123-456-7890",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "",
+  "invoice_number": "2032-04",
+  "currency": "USD",
+  "total_net": 3075.00,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 2460.00
+}

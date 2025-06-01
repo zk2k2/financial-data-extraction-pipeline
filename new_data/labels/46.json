@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Robinson-Carson",
+    "address": "28713 Hart Fort Suite 267, Stewarttown, MI 55458 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "371.TOQASACEIZS",
+    "website": ""
+  },
+  "invoice_date": "11/08/2001",
+  "invoice_number": "INV/89-48/924",
+  "currency": "USD",
+  "total_net": 391.18,
+  "total_tax": 8.75,
+  "total_amount_incl_tax": 399.93
+}

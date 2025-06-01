@@ -1,0 +1,16 @@
+{
+"supplier": {
+"name": "Little Meadow Apiary",
+"address": "2017 Queens Lane, Bloomington, IN 555-052-0312",
+"email": "info@littlemeadowbees.sp.com",
+"phone_number": "",
+"vat_number": "",
+"website": "www.littlemeadowapiary.sp.com"
+},
+"invoice_date": "23/05/2025",
+"invoice_number": "15222",
+"currency": "$",
+"total_net": 197.50,
+"total_tax": 10.37,
+"total_amount_incl_tax": 207.37
+}

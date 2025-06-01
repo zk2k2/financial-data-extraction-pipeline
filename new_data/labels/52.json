@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "",
+    "address": "02850 Nicole Ferry Apt.873, Lake Antonioshire, MA 17317 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "15/06/2021",
+  "invoice_number": "INV03225175",
+  "currency": "USD",
+  "total_net": 636.19,
+  "total_tax": 7.95,
+  "total_amount_incl_tax": 644.14
+}

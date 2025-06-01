@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Zylker",
+    "address": "19 High St, Wixford, B49 5SX, United Kingdom",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "04/05/2024",
+  "invoice_number": "INV-17",
+  "currency": "GBP",
+  "total_net": 630.00,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 630.00
+}

@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Bright Future Ltd",
+    "address": "92 Hertfield Avenue, London EN2 9QR, England",
+    "email": "customer@brightfuture.co.uk",
+    "phone_number": "01234567890",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "17/01/2023",
+  "invoice_number": "INVO1234",
+    "currency": "GBP",
+  "total_net": 480.00,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 480.00
+}

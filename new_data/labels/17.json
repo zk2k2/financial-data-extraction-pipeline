@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Mycompany Ltd",
+    "address": "57 Goodwood St, Eastwood, Woodshire, WE99 9EE",
+    "email": "",
+    "phone_number": "01234 567890",
+    "vat_number": "123 4567 89",
+    "website": ""
+  },
+  "invoice_date": "31/01/2000",
+  "invoice_number": "5",
+  "currency": "GBP",
+  "total_net": 275.00,
+  "total_tax": 55.00,
+  "total_amount_incl_tax": 330.00
+}

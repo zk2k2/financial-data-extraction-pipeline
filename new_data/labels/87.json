@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Beautycounter by Elisha",
+    "address": "403 Faletti Circle, Rivervale, NJ 07675, United States",
+    "email": "ediesiper@yahoo.com",
+    "phone_number": "917-748-0235",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "",
+  "invoice_number": "IS-70537",
+  "currency": "USD",
+  "total_net": 172.56,
+  "total_tax": 0.00,
+  "total_amount_incl_tax": 172.56
+}

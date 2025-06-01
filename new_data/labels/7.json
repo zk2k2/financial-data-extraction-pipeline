@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Your Company Name",
+    "address": "Address, City, Postcode",
+    "email": "first.last@company.co.uk",
+    "phone_number": "+447000000000",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "29/05/2021",
+  "invoice_number": "12345",
+  "currency": "GBP",
+  "total_net": 3312.00,
+  "total_tax": 828.00,
+  "total_amount_incl_tax": 4140.00
+}

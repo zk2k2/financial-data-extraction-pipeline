@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "Duran, Morgan and Lopez",
+    "address": "4901 Long Wali Apt.620, Joshuaville, CT 95783 US",
+    "email": "",
+    "phone_number": "",
+    "vat_number": "336SPTNO371.G120",
+    "website": "http://roman.com/"
+  },
+  "invoice_date": "02/09/2015",
+  "invoice_number": "",
+  "currency": "USD",
+  "total_net": 775.43,
+  "total_tax": 139.58,
+  "total_amount_incl_tax": 779.97
+}

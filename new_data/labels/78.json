@@ -1,0 +1,16 @@
+{
+  "supplier": {
+    "name": "University of California, Davis",
+    "address": "Extramural Accounting, Davis, California",
+    "email": "",
+    "phone_number": "(530) 757-8527",
+    "vat_number": "",
+    "website": ""
+  },
+  "invoice_date": "22/10/2001",
+  "invoice_number": "59280-1",
+  "currency": "$",
+  "total_net": 12180.23,
+  "total_tax": 0,
+  "total_amount_incl_tax": 11522.10
+}
