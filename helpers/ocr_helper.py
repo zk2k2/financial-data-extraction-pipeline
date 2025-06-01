@@ -2,10 +2,11 @@ from pathlib import Path
 from paddleocr import PaddleOCR
 from pdf2image import convert_from_path
 
-ingine = PaddleOCR(use_angle_cls=True, lang="en", show_log=False)
+ingine = PaddleOCR(use_angle_cls=True, lang="en", use_gpu=True, show_log=False)
 
 
-def extract_text_from_image(file_path: str) -> str:
+
+def extract_text_from_image_gpu(file_path: str) -> str:
     """
     Runs OCR on a given file (image or PDF) and returns the extracted plain text.
 
@@ -36,3 +37,25 @@ def extract_text_from_image(file_path: str) -> str:
                 lines.append(line[1][0])
 
     return "\n".join(lines)
+
+
+def extract_text_from_image(path):
+    # Initialize PaddleOCR with CPU usage
+    ocr_engine = PaddleOCR(
+        use_angle_cls=True, 
+        lang='en',
+        use_gpu=False,  # Force CPU usage
+        show_log=False
+    )
+    
+    result = ocr_engine.ocr(str(path), cls=True)
+    
+    # Extract text from OCR results
+    extracted_text = ""
+    if result and result[0]:
+        for line in result[0]:
+            if len(line) > 1:
+                extracted_text += line[1][0] + "\n"
+    print("Extracted text:", extracted_text.strip())
+    
+    return extracted_text.strip()

@@ -49,20 +49,14 @@ SYSTEM_MSG = """Extract invoice data from OCR'd text into this exact JSON schema
     "reference": string,     // phone or other ref
     "country": string
 },
-"items": [
-    {
-    "description": string,
-    "amount": number,
-    "vat_amount": number,
-    "vat_rate": string
-    }
-],
+
 "total": number,
 "total_vat": number,
 "total_due": number,
 "issued_by": string
 } 
 """
+
 
 
 def extract_invoice_data(ocr_text):
