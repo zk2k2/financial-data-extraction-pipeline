@@ -5,8 +5,15 @@ import threading
 import tempfile
 from pathlib import Path
 
-from fastapi import FastAPI, UploadFile, File, Request, Response
+from sqlalchemy.orm import Session
+from database.connection import get_db, create_tables
+from services.invoice_service import InvoiceService
+from services.pipeline_service import PipelineService
+
+from fastapi import FastAPI, UploadFile, File, Request, Response, Depends
 from fastapi.concurrency import run_in_threadpool
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 # ───── prometheus_client imports ────────────────────────────────────────────────
 from prometheus_client import (
@@ -57,6 +64,8 @@ GPU_MEM_USED = Gauge(
 pynvml.nvmlInit()
 gpu_handle = pynvml.nvmlDeviceGetHandleByIndex(0)  # Assumes GPU index 0
 
+
+
 def _poll_gpu_metrics():
     """
     Poll NVIDIA GPU stats every 5 seconds and set the gauges.
@@ -74,8 +83,40 @@ app = FastAPI()
 # Start GPU polling on startup
 @app.on_event("startup")
 def startup_event():
+    create_tables()
     thread = threading.Thread(target=_poll_gpu_metrics, daemon=True)
     thread.start()
+
+
+# Serve static files
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Serve the main page
+@app.get("/")
+async def read_index():
+    return FileResponse('static/index.html')
+
+# Add this endpoint before the main section
+
+@app.get("/monitoring")
+async def monitoring_dashboard():
+    return FileResponse('static/monitoring.html')
+
+@app.get("/api/pipeline-stats")
+async def get_pipeline_stats(db: Session = Depends(get_db)):
+    """Get overall pipeline statistics"""
+    invoice_service = InvoiceService(db)
+    invoices = invoice_service.get_invoices(limit=1000)
+    
+    stats = {
+        "total_invoices": len(invoices),
+        "successful_extractions": len([i for i in invoices if i.total_amount]),
+        "failed_extractions": len([i for i in invoices if not i.total_amount]),
+        "average_amount": sum([float(i.total_amount or 0) for i in invoices]) / max(len(invoices), 1),
+        "recent_invoices": [i.to_dict() for i in invoices[-5:]]  # Last 5
+    }
+    
+    return stats
 
 # ───── Middleware to measure latency + count requests ───────────────────────────
 @app.middleware("http")
@@ -107,7 +148,7 @@ RESULTS_DIR = "results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 @app.post("/extract")
-async def extract(invoice_image: UploadFile = File(...)):
+async def extract(invoice_image: UploadFile = File(...), db: Session = Depends(get_db)):
     if invoice_image.filename is None:
         return {"error": "No filename provided"}
 
@@ -117,23 +158,74 @@ async def extract(invoice_image: UploadFile = File(...)):
         tmp.write(content)
         tmp_path = tmp.name
 
-    ocr_text = await run_in_threadpool(extract_text_from_image, tmp_path)
-    result_text = await run_in_threadpool(extract_invoice_data, ocr_text=ocr_text)
+    try:
+        import time
+        invoice_id = int(time.time() * 1000)  # Use current timestamp as unique ID
+        
+        # Use pipeline service for processing
+        pipeline_service = PipelineService()
+        result = await run_in_threadpool(
+            pipeline_service.process_invoice_pipeline,
+            invoice_id,
+            content,
+            invoice_image.filename
+        )
+    except Exception as e:
+        print(f"Error processing invoice: {e}")
+        return {"error": str(e)}
 
-    if isinstance(result_text, (dict, list)):
-        structured = result_text
+    finally:
+        # Clean up temporary file
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+    # return {"error": "An unexpected error occurred during processing"}
+
+
+@app.get("/pipeline/status/{invoice_id}")
+async def get_pipeline_status(invoice_id: int):
+    """Get processing status of an invoice"""
+    pipeline_service = PipelineService()
+    return pipeline_service.get_pipeline_status(invoice_id)
+
+@app.get("/pipeline/cleaned/{invoice_id}")
+async def get_cleaned_data(invoice_id: int):
+    """Get cleaned invoice data from MinIO"""
+    pipeline_service = PipelineService()
+    data = pipeline_service.get_cleaned_invoice_data(invoice_id)
+    
+    if data:
+        return data
     else:
-        try:
-            structured = json.loads(result_text)
-        except json.JSONDecodeError:
-            return {"error": "Invalid JSON from LLM", "raw": result_text}
+        return {"error": "Cleaned data not found"}
 
-    # (Optional) write to a file
-    output_file = Path(tempfile.gettempdir()) / "structured_output.json"
-    with open(output_file, "w") as f:
-        json.dump(structured, f, indent=4)
+@app.post("/pipeline/reprocess/{invoice_id}")
+async def reprocess_invoice(invoice_id: int):
+    """Reprocess an invoice through validation pipeline"""
+    pipeline_service = PipelineService()
+    result = await run_in_threadpool(
+        pipeline_service.reprocess_invoice,
+        invoice_id
+    )
+    return result
 
-    return structured
+
+@app.get("/invoices")
+async def get_invoices(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    """Get list of stored invoices"""
+    invoice_service = InvoiceService(db)
+    invoices = invoice_service.get_invoices(skip=skip, limit=limit)
+    return [invoice.to_dict() for invoice in invoices]
+
+@app.get("/invoices/{invoice_id}")
+async def get_invoice(invoice_id: int, db: Session = Depends(get_db)):
+    """Get specific invoice by ID"""
+    invoice_service = InvoiceService(db)
+    invoice = invoice_service.get_invoice(invoice_id)
+    if not invoice:
+        return {"error": "Invoice not found"}
+    return invoice.to_dict()
+
+
 
 # ───── Run with Uvicorn ───────────────────────────────────────────────────────────
 if __name__ == "__main__":
