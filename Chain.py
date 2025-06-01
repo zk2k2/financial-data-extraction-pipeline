@@ -35,26 +35,21 @@ SYSTEM_MSG = """Extract invoice data from OCR'd text into this exact JSON schema
 
 ### Schema:
 {
-"invoice_number": string,
-"seller": {
+  "supplier": {
     "name": string,
     "address": string,
-    "country": string
-},
-"invoice_date": string,    // DD/MM/YYYY
-"due_date": string,        // DD/MM/YYYY
-"client": {
-    "name": string,
-    "address": string,
-    "reference": string,     // phone or other ref
-    "country": string
-},
-
-"total": number,
-"total_vat": number,
-"total_due": number,
-"issued_by": string
-} 
+    "email": string,
+    "phone_number": string,
+    "vat_number": string,
+    "website": string
+  },
+  "invoice_date": string,       // DD/MM/YYYY
+  "invoice_number": string,
+  "currency": string,
+  "total_net": number,
+  "total_tax": number,
+  "total_amount_incl_tax": number
+}
 """
 
 
