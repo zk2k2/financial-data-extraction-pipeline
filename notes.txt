@@ -1,0 +1,8 @@
+# Create a new migration when you change models
+alembic revision --autogenerate -m "Description of changes"
+
+# Apply migrations
+alembic upgrade head
+
+# Rollback migrations
+alembic downgrade -1

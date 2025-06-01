@@ -1,0 +1,46 @@
+stages:
+  extract_ocr:
+    cmd: python -c "
+      import sys
+      from services.pipeline_service import PipelineService
+      pipeline = PipelineService()
+      pipeline.process_batch_ocr()
+      "
+    deps:
+      - data/
+    outs:
+      - data/ocr_output/
+
+  extract_llm:
+    cmd: python -c "
+      import sys
+      from services.pipeline_service import PipelineService
+      pipeline = PipelineService()
+      pipeline.process_batch_llm()
+      "
+    deps:
+      - data/ocr_output/
+    outs:
+      - data/llm_output/
+
+  clean_data:
+    cmd: python -c "
+      import sys
+      from services.pipeline_service import PipelineService
+      pipeline = PipelineService()
+      pipeline.process_batch_cleaning()
+      "
+    deps:
+      - data/llm_output/
+    outs:
+      - data/cleaned_invoices/
+
+  upload_to_minio:
+    cmd: python -c "
+      import sys
+      from services.pipeline_service import PipelineService
+      pipeline = PipelineService()
+      pipeline.upload_cleaned_to_minio()
+      "
+    deps:
+      - data/cleaned_invoices/
