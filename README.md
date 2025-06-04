@@ -4,7 +4,7 @@ This is a pipeline designed to automate the extraction of structured financial d
 
 ## Demo 🎥
 
-https://github.com/user-attachments/assets/d13199c4-5d75-4896-bb96-b3c46105ca79
+https://github.com/user-attachments/assets/53c07621-a7fd-4455-8b5f-be66c9105d4f
 
 ## ✨ Features
 
