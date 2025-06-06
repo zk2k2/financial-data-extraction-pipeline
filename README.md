@@ -57,7 +57,7 @@ That’s it—FastAPI will be listening (by default) on `http://localhost:8000`,
 
 ## 🤝 Contributing
 
-We welcome contributions to improve InvoiceX! Please fork the repository, create a feature branch, and submit a pull request for review.
+We welcome contributions to improve this project! Please fork the repository, create a feature branch, and submit a pull request for review.
 
 ## 📜 License
 
