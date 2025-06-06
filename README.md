@@ -32,7 +32,7 @@ Ensure you have the following installed on your system:
 
 1. **Clone the repository:**
     ```sh
-    git clone [https://github.com/your_username/invoicex.git](https://github.com/zk2k2/financial-data-extraction-pipeline.git
+    git clone https://github.com/zk2k2/financial-data-extraction-pipeline.git
     ```
 
 2. **Create a Python virtual environment and install dependencies:**
