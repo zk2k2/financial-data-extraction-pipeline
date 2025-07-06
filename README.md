@@ -1,7 +1,7 @@
 # 🧾 Financial Data Extraction Pipeline
 
 This is a pipeline designed to automate the extraction of structured financial data from invoices. Users upload invoices (PNG, PDF, etc.), which are first processed by PaddleOCR for text extraction. A Large Language Model (local via Ollama or cloud via OpenRouter) then post-processes the OCR output to generate JSON with relevant fields. Results undergo semantic validation (e.g., numeric checks), and the entire workflow is orchestrated through a FastAPI service. Monitoring and observability are provided by Prometheus and Grafana.
-
+ 
 ## Demo 🎥
 
 https://github.com/user-attachments/assets/53c07621-a7fd-4455-8b5f-be66c9105d4f
